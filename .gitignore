@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # extra README for npm
-packages/react-router-loading/README.md
+react-router-loading/README.md

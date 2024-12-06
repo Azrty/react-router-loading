@@ -32,7 +32,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "pre-publish": "yarn build && cp -fr ../../README.md ."
+    "pre-publish": "yarn build && cp -fr ../../README.md "
   },
   "peerDependencies": {
     "react": ">=16.8",

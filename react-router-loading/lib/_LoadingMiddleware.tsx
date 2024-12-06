@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useCallback, useEffect, useRef, FC, PropsWithChildren } from 'react';
 import { LoadingContext, LoadingGetterContext } from './LoadingContext';
-import { topbar } from '.';
+import { topbar } from './index';
 
 const LoadingMiddleware: FC<PropsWithChildren<{ isLoading?: boolean }>> = ({ children, isLoading = false }) => {
   const [loading, setLoading] = useState(isLoading);

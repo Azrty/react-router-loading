@@ -1,4 +1,4 @@
-declare module 'topbar' {
+declare module 'lib/topbar' {
   export interface TopBarConfig {
     autoRun?: boolean;
     barThickness?: number;
