@@ -5,6 +5,15 @@ export type LoadingRouteObject = RouteObject & {
   loading?: boolean;
 }
 
+interface RouteProps {
+  caseSensitive?: boolean;
+  element?: React.ReactNode;
+  index?: boolean;
+  path?: string;
+  loading?: boolean;
+  children?: React.ReactNode;
+}
+
 // adapted from original createRoutesFromChildren
 // https://github.com/remix-run/react-router/blob/main/packages/react-router/lib/components.tsx
 export function createRoutesFromChildren(children: React.ReactNode): LoadingRouteObject[] {
@@ -20,20 +29,20 @@ export function createRoutesFromChildren(children: React.ReactNode): LoadingRout
     if (element.type === React.Fragment) {
       // Transparently support React.Fragment and its children.
       // eslint-disable-next-line prefer-spread
-      routes.push.apply(routes, createRoutesFromChildren(element.props.children));
+      routes.push.apply(routes, createRoutesFromChildren((element.props as RouteProps).children));
       return;
     }
 
     const route: LoadingRouteObject = {
-      caseSensitive: element.props.caseSensitive,
-      element: element.props.element,
-      index: element.props.index,
-      path: element.props.path,
-      loading: element.props.loading,
+      caseSensitive: (element.props as RouteProps).caseSensitive,
+      element: (element.props as RouteProps).element,
+      index: (element.props as RouteProps).index,
+      path: (element.props as RouteProps).path,
+      loading: (element.props as RouteProps).loading,
     };
 
-    if (element.props.children) {
-      route.children = createRoutesFromChildren(element.props.children);
+    if ((element.props as RouteProps).children) {
+      route.children = createRoutesFromChildren((element.props as RouteProps).children);
     }
 
     routes.push(route);

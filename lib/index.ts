@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { default as _topbar } from 'lib/topbar';
+import { default as _topbar } from 'topbar';
 import { LoadingContext, LoadingGetterContext } from './LoadingContext';
 
 export { default as Route } from './Route';

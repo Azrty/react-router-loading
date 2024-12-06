@@ -51,7 +51,8 @@ const LoadingRoutes: FC<PropsWithChildren<LoadingRoutesProps>> = ({
   });
   const [next, setNext] = useState<LoadingRoutesState>(current);
 
-  const timeout: React.MutableRefObject<NodeJS.Timeout | undefined> = useRef();
+// After
+const timeout: React.RefObject<NodeJS.Timeout | undefined> = useRef(undefined);
 
   // 🔄 Lifecycle
   // when location was changed
