@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f71794a-20a9-48d0-9ac2-dd97f68f961c" name="Changes" comment="wsdceferf">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="9f71794a-20a9-48d0-9ac2-dd97f68f961c" name="Changes" comment="wsdceferf" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733520935016</updated>
-      <workItem from="1733520936933" duration="1131000" />
+      <workItem from="1733520936933" duration="1207000" />
     </task>
     <task id="LOCAL-00001" summary="wsdcef">
       <option name="closed" value="true" />
@@ -96,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733522120105</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="wsdceferf">
+      <option name="closed" value="true" />
+      <created>1733522165999</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733522165999</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
